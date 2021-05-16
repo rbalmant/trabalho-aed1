@@ -1,0 +1,11 @@
+*.o
+*.out
+testes/*.out
+testes/*.o
+ordenacao/*.o
+ordenacao/**/*.o
+ordenacao/**/*.out
+*.zip
+*.png
+tempos/
+código\ bugado/
