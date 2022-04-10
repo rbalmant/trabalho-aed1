@@ -15,7 +15,6 @@ A inserção foi feita em todas as estruturas de dados utilizando um vetor auxil
 \
 Nos testes, foram inseridos todos os elementos do vetor auxiliar na estrutura de dados, e na remoção ou foi escolhido um elemento do vetor auxiliar aleatório (nos casos de lista sequencial e lista encadeada), ou usada a função própria de remoção da pilha e fila (pop e dequeue, respectivamente).
 
-Uma coisa muito interessante (pelo menos pra mim) que parei para refletir sobre o trabalho, foi que eu (ingenuamente) utilizei o tipo de dado primitivo <strong>int</strong> para armazenar todos os dados e tamanhos de vetores dos programas. Acontece que <strong>int</strong> guarda pelo menos algo entre -32,767 e 32,767 (2^15 - 1, por ser signed), mas meus programas ultrapassaram e muito esses valores, chegando até a um valor um pouco menor que 2^31 - 1 (que seria um signed long, 32 bits). Ou seja, ao longo da execução dos programas, o GCC promoveu muitas variáveis do tipo int para long. Me pergunto se fossem utilizados outros compiladores que também fossem fiéis pelo menos ao padrão C99, se o mesmo teria acontecido...
 \
 \
 Os seguintes resultados foram obtidos:
